@@ -83,7 +83,9 @@ public class Hamburger {
 
         totalPrice += this.condimentPrice;
 
-        return totalPrice;
+        double roundOff = (double) Math.round(totalPrice * 100) / 100;
+
+        return roundOff;
 
     }
 
