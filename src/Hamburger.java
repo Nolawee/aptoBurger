@@ -67,7 +67,7 @@ public class Hamburger {
     }
 
 
-    public void orderUpBurger(){
+    public double orderUpBurger(){
         double totalPrice = this.price;
         System.out.println("Your order is a " + meat + " burger with a "+ this.breadRollType + " bun, " +" with an initial price of $"+ this.price);
 
@@ -83,7 +83,7 @@ public class Hamburger {
 
         totalPrice += this.condimentPrice;
 
-        System.out.println("Total Price of order is: $" + totalPrice);
+        return totalPrice;
 
     }
 
